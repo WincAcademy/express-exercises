@@ -1,9 +1,9 @@
 import express from 'express';
-import getBooks from '../../services/books/getBooks.js'
-import createBook from '../../services/books/createBook.js'
-import getBookById from '../../services/books/getBookById.js'
-import updateBookById from '../../services/books/updateBookById.js'
-import deleteBook from '../../services/books/deleteBook.js'
+import getBooks from '../services/books/getBooks.js'
+import createBook from '../services/books/createBook.js'
+import getBookById from '../services/books/getBookById.js'
+import updateBookById from '../services/books/updateBookById.js'
+import deleteBook from '../services/books/deleteBook.js'
 
 const router = express.Router();
 

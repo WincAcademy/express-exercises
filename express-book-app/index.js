@@ -1,6 +1,6 @@
 import express from 'express'
-import booksRouter from './express-book-app/routes/books.js'
-import log from './express-book-app/middleware/logMiddleware.js'
+import booksRouter from './routes/books.js'
+import log from './middleware/logMiddleware.js'
 
 const app = express()
 app.use(express.json())
