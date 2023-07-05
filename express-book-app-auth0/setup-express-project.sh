@@ -13,3 +13,8 @@ touch login.js
 npm i jsonwebtoken
 npm i dotenv
 npm i express-oauth2-jwt-bearer
+
+curl --request POST \
+  --url https://dev-qf7qwlhuy05tzufa.us.auth0.com/oauth/token \
+  --header 'content-type: application/json' \
+  --data '{"client_id":"l9hCNdelwy6PmFrj7MvyjLbCrSO7awpg","client_secret":"8mqbKnr314LCWs56WHdES4Ve2IJZSTfht1tgHvXqztN7TqqSF0F7bC2Drd9O1ADw","audience":"https://book-store-api","grant_type":"client_credentials"}'

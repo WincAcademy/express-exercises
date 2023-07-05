@@ -57,7 +57,7 @@ router.put('/:id', authMiddleware, (req, res) => {
       isbn,
       pages,
       available,
-      genre,
+      genre
     )
     res.status(200).json(updatedBook)
   } catch (error) {
@@ -75,7 +75,7 @@ router.delete('/:id', authMiddleware, (req, res) => {
       res.status(404).send(`Book with id ${id} was not found!`)
     } else {
       res.status(200).json({
-        message: `Book with id ${deletedBookId} was deleted!`,
+        message: `Book with id ${deletedBookId} was deleted!`
       })
     }
   } catch (error) {

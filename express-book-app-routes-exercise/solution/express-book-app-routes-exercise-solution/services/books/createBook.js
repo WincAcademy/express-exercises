@@ -1,5 +1,5 @@
-import bookData from '../../data/books.json' assert { type: 'json' };
-import { v4 as uuid } from 'uuid';
+import bookData from '../../data/books.json' assert { type: 'json' }
+import { v4 as uuid } from 'uuid'
 
 const createBook = (title, author, isbn, pages, available, genre) => {
   const newBook = {
@@ -9,11 +9,11 @@ const createBook = (title, author, isbn, pages, available, genre) => {
     isbn,
     pages,
     available,
-    genre,
-  };
+    genre
+  }
 
-  bookData.books.push(newBook);
-  return newBook;
-};
+  bookData.books.push(newBook)
+  return newBook
+}
 
-export default createBook;
+export default createBook

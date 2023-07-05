@@ -55,7 +55,7 @@ router.put('/:id', (req, res) => {
       artist,
       year,
       available,
-      genre,
+      genre
     )
     res.status(200).json(updatedRecord)
   } catch (error) {
@@ -73,7 +73,7 @@ router.delete('/:id', (req, res) => {
       res.status(404).send(`Record with id ${id} was not found!`)
     } else {
       res.status(200).json({
-        message: `Record with id ${deletedRecordId} was deleted!`,
+        message: `Record with id ${deletedRecordId} was deleted!`
       })
     }
   } catch (error) {

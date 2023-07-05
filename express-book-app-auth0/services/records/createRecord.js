@@ -1,5 +1,5 @@
-import recordData from '../../data/records.json' assert { type: 'json' };
-import { v4 as uuid } from 'uuid';
+import recordData from '../../data/records.json' assert { type: 'json' }
+import { v4 as uuid } from 'uuid'
 
 const createRecord = (title, artist, year, genre) => {
   const newRecord = {
@@ -7,11 +7,11 @@ const createRecord = (title, artist, year, genre) => {
     title,
     artist,
     year,
-    genre,
-  };
+    genre
+  }
 
-  recordData.records.push(newRecord);
-  return newRecord;
-};
+  recordData.records.push(newRecord)
+  return newRecord
+}
 
-export default createRecord;
+export default createRecord

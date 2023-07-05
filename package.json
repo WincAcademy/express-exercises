@@ -1,0 +1,20 @@
+{
+  "name": "express-exercises",
+  "version": "1.0.0",
+  "description": "Monorepo for exercises of the Express module in the Full-Stack JavaScript course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.22.6",
+    "@babel/plugin-syntax-import-assertions": "^7.22.5",
+    "eslint": "^8.44.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}
