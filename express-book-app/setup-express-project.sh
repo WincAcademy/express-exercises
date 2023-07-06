@@ -12,4 +12,5 @@ touch books.js
 touch login.js
 npm i jsonwebtoken
 npm i dotenv
+npm i @sentry/node
 

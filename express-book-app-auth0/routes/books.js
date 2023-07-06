@@ -10,25 +10,15 @@ import notFoundErrorHandler from '../middleware/notFoundErrorHandler.js'
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  try {
-    const { genre, available } = req.query
-    const books = getBooks(genre, available)
-    res.status(200).json(books)
-  } catch (error) {
-    console.error(error)
-    res.status(500).send('Something went wrong while getting list of books!')
-  }
+  const { genre, available } = req.query
+  const books = getBooks(genre, available)
+  res.status(200).json(books)
 })
 
 router.post('/', authMiddleware, (req, res) => {
-  try {
-    const { title, author, isbn, pages, available, genre } = req.body
-    const newBook = createBook(title, author, isbn, pages, available, genre)
-    res.status(201).json(newBook)
-  } catch (error) {
-    console.error(error)
-    res.status(500).send('Something went wrong while creating new book!')
-  }
+  const { title, author, isbn, pages, available, genre } = req.body
+  const newBook = createBook(title, author, isbn, pages, available, genre)
+  res.status(201).json(newBook)
 })
 
 router.get('/:id', (req, res) => {
