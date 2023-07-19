@@ -1,7 +1,7 @@
-import bookData from '../../data/books.json' assert { type: 'json' }
+import bookData from '../../data/books.json' assert { type: 'json' };
 
 const getBookById = (id) => {
-  return bookData.books.find(book => book.id === id)
-}
+  return bookData.books.find(book => book.id === id);
+};
 
-export default getBookById
+export default getBookById;

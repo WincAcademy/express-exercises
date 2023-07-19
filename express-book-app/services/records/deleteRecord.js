@@ -1,14 +1,15 @@
-import recordData from '../../data/records.json' assert { type: 'json' }
+import recordData from '../../data/records.json' assert { type: 'json' };
+import NotFoundError from '../../errors/NotFoundError.js';
 
 const deleteRecord = (id) => {
-  const index = recordData.records.findIndex((record) => record.id === id)
+  const index = recordData.records.findIndex((record) => record.id === id);
 
   if (index === -1) {
-    return null
+    throw new NotFoundError('Record', id);
   }
 
-  recordData.records.splice(index, 1)
-  return id
-}
+  recordData.records.splice(index, 1);
+  return id;
+};
 
-export default deleteRecord
+export default deleteRecord;
