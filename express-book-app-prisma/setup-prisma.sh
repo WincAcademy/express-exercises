@@ -7,3 +7,5 @@ npx prisma generate
 npx prisma db seed
 npx prisma studio
 npm run dev
+npx prisma migrate dev --name init
+npx prisma migrate reset --skip-seed
