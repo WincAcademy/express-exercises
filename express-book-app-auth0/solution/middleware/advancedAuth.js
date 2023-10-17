@@ -1,8 +1,8 @@
 import { auth } from 'express-oauth2-jwt-bearer';
 
 const checkJwt = auth({
-  audience: 'https://book-store-api',
-  issuerBaseURL: 'https://dev-qf7qwlhuy05tzufa.us.auth0.com/',
+  audience: '{yourApiIdentifier}', // e.g. https://book-store-api
+  issuerBaseURL: 'https://{yourDomain}/',
 });
 
 export default checkJwt;
