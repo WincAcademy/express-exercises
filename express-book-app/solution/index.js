@@ -10,7 +10,7 @@ import * as Sentry from '@sentry/node'
 const app = express()
 
 Sentry.init({
-  dsn: 'https://262d1d9a96744a8ca121b505745acee5@o4505480813281280.ingest.sentry.io/4505480939634688',
+  dsn: 'https:process.env.SENTRY_DSN.ingest.sentry.io/xxxxxx', /* Add you own sentry.io dsn here */
   integrations: [
     // enable HTTP calls tracing
     new Sentry.Integrations.Http({ tracing: true }),
